@@ -22,4 +22,4 @@ def server(client, message):
     count_commands = os.listdir('commands')
     count_commands.remove("__pycache__")
 
-    message.reply_text(f"<b>🤖 Информация о боте:</b>\n<b>Uptime:</b> {uptime.days} дней\n<b>Commit:</b> {url_last_commit}\n<b>Количество команд:</b> {len(count_commands)}\n\n<b>🌐 Информация о сервере:</b>\n<b>GPU Load:</b> {psutil.cpu_percent()}", disable_web_page_preview=True)
+    message.reply_text(f"<b>🤖 Информация о боте:</b>\n<b>Uptime:</b> {uptime.days} дней\n<b>Commit:</b> {url_last_commit}\n<b>Количество команд:</b> {len(count_commands)}\n\n<b>🌐 Информация о сервере:</b>\n<b>CPU Load:</b> {psutil.cpu_percent()}", disable_web_page_preview=True)
